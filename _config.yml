@@ -7,10 +7,10 @@ name: me.neoascetic
 url: http://neoascetic.me
 # optional list of links that will be placed in the header
 links:
-  Имэйл: mailto:i@neoascetic.me
-  Гитхаб: https://github.com/neoascetic/
-  Твиттор: https://twitter.com/neoascetic
-  Эбаут: /about/
+  email: mailto:i@neoascetic.me
+  github: https://github.com/neoascetic/
+  twitter: https://twitter.com/neoascetic
+  about: /about/
 
 ## 3rd party services (all parameters are optional)
 # http://disqus.com/ site identifier
