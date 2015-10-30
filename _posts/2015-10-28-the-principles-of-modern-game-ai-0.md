@@ -1,6 +1,6 @@
 ---
 title: Принципы современного игрового ИИ. Вводная неделя
-redirect_from: "/the-principles-of-modern-game-ai-0/"
+redirect_from: "/the-principles-of-modern-game-ai-1-intro/"
 ---
 
 Совершенно случайно наткнулся на [ссылку][course]  на этот курс. Разработкой ИИ
