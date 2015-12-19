@@ -164,6 +164,9 @@ title: Принципы современного игрового ИИ. Перв
 низким приоритетом могут  вставать в очередь на обновление  либо не обновляться
 вовсе.
 
+[Предыдущий урок]({% post_url 2015-10-28-the-principles-of-modern-game-ai-0 %})
+
+[Следующий урок]({% post_url 2015-12-19-the-principles-of-modern-game-ai-2 %})
 
 
 [round-robin]: https://ru.wikipedia.org/wiki/Round-robin_(алгоритм)
