@@ -15,8 +15,6 @@ links:
 ## 3rd party services (all parameters are optional)
 # http://disqus.com/ site identifier
 disqus_shortname: neoascetic
-# https://crowdprocess.com/ provider identifier
-crowdprocess_provider_id: 07fbeb61-ff70-4889-a197-57fb24854db9
 
 ## jekyll settings
 highlighter: pygments
