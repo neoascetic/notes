@@ -258,7 +258,7 @@ softplus.
 
 [Предыдуший урок]({% post_url 2015-11-13-the-principles-of-modern-game-ai-1 %})
 
-[Cлудующий урок]({% post_url 2016-03-28-the-principles-of-modern-game-ai-3 %})
+[Cледующий урок]({% post_url 2016-03-28-the-principles-of-modern-game-ai-3 %})
 
 
 [UUID]: https://ru.wikipedia.org/wiki/UUID
