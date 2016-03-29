@@ -418,6 +418,7 @@ partitioning][binary-space-partitioning]).
 
 ![](/images/the-principles-of-modern-game-ai/3/20-clusterization.jpg)
 
+[Предыдущий урок]({% post_url 2015-12-19-the-principles-of-modern-game-ai-2 %})
 
 
 [blackboard]: https://en.wikipedia.org/wiki/Blackboard_(design_pattern)
