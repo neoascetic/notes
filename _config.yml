@@ -18,7 +18,7 @@ disqus_shortname: neoascetic
 
 ## jekyll settings
 permalink: /:title/
-gems: [jekyll-sitemap, jekyll-redirect-from, jekyll-paginate, jekyll-gist]
+gems: [jekyll-sitemap, jekyll-redirect-from, jekyll-paginate, jekyll-gist, jekyll-feed]
 
 paginate: 5
 paginate_path: "page-:num/"
