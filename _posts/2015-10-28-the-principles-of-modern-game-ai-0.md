@@ -1,6 +1,6 @@
 ---
 title: Принципы современного игрового ИИ. Вводный урок
-redirect_from: "/the-principles-of-modern-game-ai-1-intro/"
+redirect_from: /the-principles-of-modern-game-ai-1-intro/
 ---
 
 Совершенно случайно наткнулся на [ссылку][course]  на этот курс. Разработкой ИИ
