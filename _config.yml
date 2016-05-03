@@ -15,10 +15,12 @@ links:
 ## 3rd party services (all parameters are optional)
 # http://disqus.com/ site identifier
 disqus_shortname: neoascetic
+twitter:
+  username: neoascetic
 
 ## jekyll settings
 permalink: /:title/
-gems: [jekyll-sitemap, jekyll-redirect-from, jekyll-paginate, jekyll-gist, jekyll-feed]
+gems: [jekyll-sitemap, jekyll-redirect-from, jekyll-paginate, jekyll-gist, jekyll-feed, jekyll-seo-tag]
 
 paginate: 5
 paginate_path: "page-:num/"
