@@ -1,4 +1,101 @@
 ---
 layout: index
-is_index: true
 ---
+<div class="hresume">
+  <section class="vcard contact">
+    <h1 class="fn">Павел Пучкин</h1>
+    <div>
+      <a rel="me" href="mailto:i@neoascetic.me">Email</a>
+      <a rel="me" href="https://github.com/neoascetic/">GitHub</a>
+      <a rel="me" href="https://twitter.com/neoascetic">Twitter</a>
+    </div>
+    <p class="adr">
+      <span class="country-name">Россия</span>,
+      <del>Владивосток</del> ✈ <span class="locality">Калининград</span>.
+    </p>
+    <p class="summary">
+      Родился <time class="bday" datetime="1989-04-28">28 апреля 1989</time> года.
+      Поучился, послужил в армии годик, женился и стал папой.
+      Юзаю линукс и OSX, люблю консоль и vim.
+      Читаю, учусь, хочу когда-нибудь таки заняться искуственным интеллектом и нейробиологией.
+    </p>
+  </section>
+
+  <section>
+    <h1>Опыт работы:</h1>
+
+    <style>
+      .buzzwords { padding: 0; }
+      .skill:after { content: ", "; }
+      .skill:last-child:after { content: ""; }
+      .skill { display: inline; list-style: none; }
+    </style>
+
+    <ol class="experience">
+      <li value="3" class="vevent">
+        <time class="dtstart">2014</time>&nbsp;&ndash;&nbsp;&hellip;
+        <span class="vcard affilation">
+          <a class="fn org url" href="http://dealersocket.com">DealerSocket</a>
+        </span>
+        (<span class="location">Калининград</span>)
+        <ul class="summary buzzwords">
+          <li class="skill">PHP/Samopis</li>
+          <li class="skill">Python</li>
+          <li class="skill">Sphinx</li>
+          <li class="skill">MySQL</li>
+          <li class="skill">AWS</li>
+        </ul>
+      </li>
+
+      <li value="2" class="vevent">
+        <time class="dtstart">2012</time>&nbsp;&ndash;&nbsp;<time class="dt-end dtend">2014</time>
+        <span class="vcard affilation">
+          <a class="fn org url" href="http://монастырёв.рф">МОНАСТЫРЁВ.рф</a>
+        </span>
+        (<span class="location">Владивосток</span>)
+        <ul class="summary buzzwords">
+          <li class="skill">PHP/Laravel 3/4</li>
+          <li class="skill">SpineJS</li>
+          <li class="skill">MySQL/MariaDB</li>
+          <li class="skill">InterSystems Caché</li>
+          <li class="skill">MSSQL</li>
+          <li class="skill">PostgreSQL</li>
+          <li class="skill">Codeception</li>
+          <li class="skill">CasperJS</li>
+        </ul>
+      </li>
+
+      <li value="1" class="vevent">
+        <time class="dtstart">2011</time>&nbsp;&ndash;&nbsp;<time class="dt-end dtend">2012</time>
+        <span class="vcard affilation">
+          <a class="fn org url" href="http://holidayautosasia.com">Holidayautos Asia</a>
+        </span>
+        (<span class="location">удалёнка</span>)
+        <ul class="summary buzzwords">
+          <li class="skill">Python/Django</li>
+          <li class="skill">MySQL</li>
+          <li class="skill">AWS</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+</div>
+
+<nav>
+  <h1>Иногда я пишу в бложек:</h1>
+  {% for post in site.posts %}
+    {% assign currentdate = post.date|date:"%Y" %}
+    {% if currentdate != date %}
+      {% if date %}</ul>{% endif %}
+      <time datetime="{{ post.date|date:"%Y" }}">{{ currentdate }}</time>
+      {% assign date = currentdate %}
+      <ul>
+    {% endif %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>&nbsp;<time pubdate="{{ post.date|date_to_xmlschema }}">{{ post.date|date:"%d/%m" }}</time>
+    </li>
+  {% endfor %}
+</nav>
+
+<script>GoL = { color: '#f1f1f1', step: 5000 }</script>
+<script src="//gistcdn.githack.com/neoascetic/3ac49306eacd98b47c41/raw/gol.js"></script>

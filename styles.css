@@ -5,17 +5,6 @@ body {
   padding: 3ex;
 }
 
-body > header {
-  position: relative;
-}
-
-@media screen and (min-width: 480px) {
-  body > header > nav {
-    float: right;
-    margin-top: .5rem;
-  }
-}
-
 article p {
   -webkit-hyphens: auto; -moz-hyphens: auto; -ms-hyphens: auto; hyphens: auto;
   text-align: justify;

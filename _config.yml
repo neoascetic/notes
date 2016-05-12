@@ -3,32 +3,19 @@
 lang: ru
 # name of your blog, required
 name: me.neoascetic
-# url on which your blog is available (no trailing slash), required
-url: http://neoascetic.me
-# optional list of links that will be placed in the header
-links:
-  email: mailto:i@neoascetic.me
-  github: https://github.com/neoascetic/
-  twitter: https://twitter.com/neoascetic
-  about: /about/
 
 ## 3rd party services (all parameters are optional)
-# http://disqus.com/ site identifier
 disqus_shortname: neoascetic
 twitter:
   username: neoascetic
 
 ## jekyll settings
 permalink: /:title/
-gems: [jekyll-sitemap, jekyll-redirect-from, jekyll-paginate, jekyll-gist, jekyll-feed, jekyll-seo-tag]
-
-paginate: 5
-paginate_path: "page-:num/"
+gems: [jekyll-sitemap, jekyll-redirect-from, jekyll-gist, jekyll-feed, jekyll-seo-tag]
 
 ## system theme stuff, do not modify unless you know what're you doing
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "index"

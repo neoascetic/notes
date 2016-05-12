@@ -41,13 +41,13 @@ browsers they differs only by values of margins and paddings. *Scripts...* what
 the scripts, for what?! Why do we need any kind of dynamics within simple - and
 trying to keep its simplicity! - blog?
 
-So,  how  to   use  `smpl`?  It's  easy.  Fork   [theme  repo][theme-repo]  and
-rename  it  to  `<your-nickname-on-github>.github.io`. Remove  all  posts  from
-directories  `_posts`,  `_drafts`  and  `about`,   and  also  all  images  from
-`images`  directory. You  need to  change `CNAME`  if you  need [custom  domain
-support][github-pages-custom-domain]  or delete  it otherwise.  Take a  look at
-`_config.yml` in order to change it for your needs. That's it! You may begin to
-write  posts.  They  must be  written  in  [markdown][github-flavored-markdown]
+So, how to  use `smpl`? It's easy. Fork [theme  repo][theme-repo] and rename it
+to  `<your-nickname-on-github>.github.io`. Remove  all  posts from  directories
+`_posts` and `_drafts`, and also all  images from `images` directory and change
+contact data  in `index.html`. You need  to change `CNAME` if  you need [custom
+domain support][github-pages-custom-domain] or delete it otherwise. Take a look
+at `_config.yml` in order to change it for your needs. That's it! You may begin
+to write  posts. They  must be written  in [markdown][github-flavored-markdown]
 and  lie within  `_posts`  directory.  They also  should  be  named as  [Jekyll
 requires][jekyll-post-requirements] (YYYY-MM-DD-post-title.md) and there should
 be minimal [front-matter][jekyll-front-matter] at the top of each post in which
