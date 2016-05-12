@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  {% if page.path == '404.md' %}<meta http-equiv="refresh" content="5; url=/">{% endif %}
+  {% if page.path == '404.html' %}<meta http-equiv="refresh" content="5; url=/">{% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/styles.css">
   {% seo %}
@@ -18,7 +18,7 @@
 
     {{ content }}
 
-    {% unless page.path == 'index.html' and site.disqus_shortname %}
+    {% unless (page.path == 'index.html' or page.path == '404.html') and site.disqus_shortname %}
     <div id="disqus_thread">
       <noscript>Please enable JavaScript to view the comments</noscript>
       <script>
