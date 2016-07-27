@@ -5,6 +5,7 @@ redirect_from: /about/
 <div class="hresume">
   <section class="vcard contact">
     <h1 class="fn">Павел Пучкин</h1>
+    <img class="photo" src="https://www.gravatar.com/avatar/2bfcb4e638dfe30252ba55aa89b10b80.jpg?s=150">
     <div>
       <a rel="me" href="mailto:i@neoascetic.me">Email</a>
       <a rel="me" href="https://github.com/neoascetic/">GitHub</a>
@@ -12,26 +13,19 @@ redirect_from: /about/
     </div>
     <p class="adr">
       <span class="country-name">Россия</span>,
-      <del>Владивосток</del> ✈ <span class="locality">Калининград</span>.
+      <del>Владивосток</del> ✈ <span class="locality">Калининград</span>
     </p>
     <p class="summary">
-      Родился <time class="bday" datetime="1989-04-28">28 апреля 1989</time> года.
-      Поучился, послужил в армии годик, женился и стал папой.
-      Юзаю линукс и OSX, люблю консоль и vim.
-      Читаю, учусь, хочу когда-нибудь таки заняться искуственным интеллектом и нейробиологией.
+      Интересуюсь искуственными интеллектом/жизнью
+      (особенно применительно к компьютерным играм) и нейробиологией
+      (в том, что касается усиления интеллекта и нейрокомпьютерных интерфейсов).
+      Открыт к предложениям о работе в любой из этих сфер.
     </p>
   </section>
 
   <section>
     <h1>Опыт работы:</h1>
-
-    <style>
-      .buzzwords { padding: 0; }
-      .skill:after { content: ", "; }
-      .skill:last-child:after { content: ""; }
-      .skill { display: inline; list-style: none; }
-    </style>
-
+    <style>.skill { font-style: italic; }</style>
     <ol class="experience">
       <li value="3" class="vevent">
         <time class="dtstart">2014</time>&nbsp;&ndash;&nbsp;&hellip;
@@ -39,13 +33,18 @@ redirect_from: /about/
           <a class="fn org url" href="http://dealersocket.com">DealerSocket</a>
         </span>
         (<span class="location">Калининград</span>)
-        <ul class="summary buzzwords">
-          <li class="skill">PHP/Samopis</li>
-          <li class="skill">Python</li>
-          <li class="skill">Sphinx</li>
-          <li class="skill">MySQL</li>
-          <li class="skill">AWS</li>
-        </ul>
+        <p class="summary">
+          Поддержка старой и разработка новой модульной платформы для
+          построения сайтов американских автодилеров.<br>
+          <span class="skill">PHP/Symfony</span>,
+          <span class="skill">Python</span>,
+          <span class="skill">Lua/OpenResty</span>,
+          <span class="skill">Celery</span>,
+          <span class="skill">Sphinx</span>,
+          <span class="skill">Redis</span>,
+          <span class="skill">MySQL</span>,
+          <span class="skill">AWS</span>.
+        </p>
       </li>
 
       <li value="2" class="vevent">
@@ -54,29 +53,34 @@ redirect_from: /about/
           <a class="fn org url" href="http://монастырёв.рф">МОНАСТЫРЁВ.рф</a>
         </span>
         (<span class="location">Владивосток</span>)
-        <ul class="summary buzzwords">
-          <li class="skill">PHP/Laravel 3/4</li>
-          <li class="skill">SpineJS</li>
-          <li class="skill">MySQL/MariaDB</li>
-          <li class="skill">InterSystems Caché</li>
-          <li class="skill">MSSQL</li>
-          <li class="skill">PostgreSQL</li>
-          <li class="skill">Codeception</li>
-          <li class="skill">CasperJS</li>
-        </ul>
+        <p class="summary">
+          Разработка сайтов для различных направлений, связанных с работой
+          этого, первоначально фармацевтического, холдинга. Обмен данными с
+          оптовой и розничными системами, внедрение автоматизированного
+          тестирование, пропаганда git вместо subversion...<br>
+          <span class="skill">Python/Django</span>,
+          <span class="skill">PHP/Laravel 3/4</span>,
+          <span class="skill">MySQL/MariaDB</span>,
+          <span class="skill">InterSystems Caché</span>,
+          <span class="skill">MSSQL</span>,
+          <span class="skill">PostgreSQL</span>.
+        </p>
       </li>
 
       <li value="1" class="vevent">
         <time class="dtstart">2011</time>&nbsp;&ndash;&nbsp;<time class="dt-end dtend">2012</time>
-        <span class="vcard affilation">
-          <a class="fn org url" href="http://holidayautosasia.com">Holidayautos Asia</a>
-        </span>
-        (<span class="location">удалёнка</span>)
-        <ul class="summary buzzwords">
-          <li class="skill">Python/Django</li>
-          <li class="skill">MySQL</li>
-          <li class="skill">AWS</li>
-        </ul>
+        <span class="vcard affilation fn org">Holiday Autos Asia</span>
+        (<span class="location">удалённо на офис в Пекине</span>)
+        <p class="summary">
+          Стартап, бывший попыткой вывода услуг компании Holiday Autos (сдача
+          автомобилей в аренду), на азиатский рынок, главным образом на китайскую
+          его часть. Не сложилось. Осуществлял поддержку бэкэнда, а также
+          интеграцию сайтов офисов в других странах (Южная Африка, Франция) с
+          нашим бэкэндом.<br>
+          <span class="skill">Python/Django</span>,
+          <span class="skill">MySQL</span>,
+          <span class="skill">AWS</span>.
+        </p>
       </li>
     </ol>
   </section>
