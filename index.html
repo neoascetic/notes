@@ -3,14 +3,19 @@ layout: index
 redirect_from: /about/
 ---
 <div class="hresume">
+  <style>
+    .skill { font-style: italic; }
+    .social li { list-style: none; }
+    @media print { .logo, nav { display: none; }}
+  </style>
   <section class="vcard contact">
-    <h1 class="fn">Павел Пучкин</h1>
     <img class="photo" src="https://www.gravatar.com/avatar/2bfcb4e638dfe30252ba55aa89b10b80.jpg?s=150">
-    <div>
-      <a rel="me" href="mailto:i@neoascetic.me">Email</a>
-      <a rel="me" href="https://github.com/neoascetic/">GitHub</a>
-      <a rel="me" href="https://twitter.com/neoascetic">Twitter</a>
-    </div>
+    <h1 class="fn">Павел Пучкин</h1>
+    <ul class="social">
+      <li><a rel="me" href="mailto:i@neoascetic.me">i@neoascetic.me</a></li>
+      <li><a rel="me" href="https://github.com/neoascetic">github.com/neoascetic</a></li>
+      <li><a rel="me" href="https://twitter.com/neoascetic">twitter.com/neoascetic</a></li>
+    </ul>
     <p class="adr">
       <span class="country-name">Россия</span>,
       <del>Владивосток</del> ✈ <span class="locality">Калининград</span>
@@ -25,7 +30,6 @@ redirect_from: /about/
 
   <section>
     <h1>Опыт работы:</h1>
-    <style>.skill { font-style: italic; }</style>
     <ol class="experience">
       <li value="3" class="vevent">
         <time class="dtstart">2014</time>&nbsp;&ndash;&nbsp;&hellip;
