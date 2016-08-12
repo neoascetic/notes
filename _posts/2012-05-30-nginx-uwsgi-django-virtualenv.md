@@ -3,7 +3,7 @@ title: Django, Nginx, Uwsgi [и Virtualenv]
 ---
 
 Не то  что бы я  кучу времени тратил  на это, но  порой было весьма  неудобно и
-муторно  поднять  django  в  виртуальном окружении.  Делал  это  однажды,  юзая
+муторно  поднять  Django  в  виртуальном окружении.  Делал  это  однажды,  юзая
 passenger,  приходилось  создавать  `passenger_wsgi.py` в  директории  проекта,
 чудить по всякому...
 
@@ -16,7 +16,7 @@ passenger,  приходилось  создавать  `passenger_wsgi.py` в  
 sudo apt-get install nginx uwsgi uwsgi-plugin-python
 ```
 
-Переходим  в  `/etc/uwsgi/apps-available/`.   Создаем  `sitename.ini`  с  таким
+Переходим  в  `/etc/uwsgi/apps-available/`.   Создаём  `sitename.ini`  с  таким
 содержанием:
 
 ```ini
@@ -34,9 +34,9 @@ module = django.core.handlers.wsgi:WSGIHandler()
 virtualenv = /home/user/.virtualenvs/someenv/
 ```
 
-Делаем линк во "включенные" приложения: `sudo ln -s sitename ../apps-enabled/`.
+Делаем линк во "включённые" приложения: `sudo ln -s sitename ../apps-enabled/`.
 
-Теперь -  энджинкс. Переходим  в `/etc/nginx/sites-available/`.  Создаем, опять
+Теперь -  энджинкс. Переходим  в `/etc/nginx/sites-available/`.  Создаём, опять
 же, `sitename` с примерно таким содержимым:
 
 ```nginx

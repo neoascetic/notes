@@ -9,8 +9,8 @@ CX-7"),  и есть  поисковой движок  Сфинкс.  Польз
 состояние системы и потратив на это как можно меньше времени, реализовать такую
 возможность.
 
-[Решением][SO]  для меня  оказалось использование  настроек [ignore_chars][]  и
-[regexp_filter][] (доступна с версии 2.1.1-beta):
+[Решением][solution] для меня оказалось использование настроек [ignore_chars][]
+и [regexp_filter][] (доступна с версии 2.1.1-beta):
 
 ```ini
 ignore_chars = -
@@ -35,7 +35,7 @@ regexp_filter = \b([\w\d]+)-([\w\d]+)\b => \1 \2 \1\2
 
 
 
-[SO]: http://stackoverflow.com/questions/24663836/configure-sphinx-to-handle-space-as-possible-words-separator/24673536#24673536
+[solution]: http://stackoverflow.com/questions/24663836/configure-sphinx-to-handle-space-as-possible-words-separator/24673536#24673536
 [ignore_chars]: http://sphinxsearch.com/docs/latest/conf-ignore-chars.html
 [regexp_filter]: http://sphinxsearch.com/docs/latest/conf-regexp-filter.html
 [trigrams-example]: http://www.ivinco.com/blog/sphinx-in-action-did-you-mean/
