@@ -103,7 +103,7 @@ redirect_from: /about/
       <ul>
     {% endif %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>&nbsp;<time pubdate="{{ post.date|date_to_xmlschema }}">{{ post.date|date:"%d/%m" }}</time>
+      <a href="{{ post.url }}">{{ post.title }}</a>&nbsp;{% if post.link %}<a href="{{ post.link }}">&infin;</a>&nbsp;{% endif %}<time pubdate="{{ post.date|date_to_xmlschema }}">{{ post.date|date:"%d/%m" }}</time>
     </li>
   {% endfor %}
 </nav>
